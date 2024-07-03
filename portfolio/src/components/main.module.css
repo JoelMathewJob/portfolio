@@ -1,0 +1,278 @@
+:root {
+    --brand: #8049ea;
+    --brand-light: #b494f3e2;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'poppins';
+    color: var(--brand);
+    margin: 20px;
+}
+
+/* header.jsx */
+
+.headercontainer {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .headercontainer{
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+
+    .header_leftcontainer{
+        position: relative;
+        top: 20px;
+    }
+    
+    .header_leftcontainer .headerblob{
+        width:250px;
+        height:250px
+        
+    }
+
+}
+
+.headercontainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/panel1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.nametitle {
+    font-family: 'poppins';
+    font-size: 100px;
+    font-weight: 00;
+    color: rgb(255, 255, 255);
+}
+
+.header_rightcontainer {
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_leftcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_leftcontainer div {
+    padding: 8px;
+    border: 2px solid white;
+    animation: blob 3s ease-in-out infinite;
+}
+
+.headerblob {
+    background-image: url(../images/joelpic.jpeg);
+    height: 330px;
+    width: 330px;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes blob {
+    0%, 100% {
+        border-radius: 60% 40% 70% 50% / 50% 60% 40% 60%;
+    }
+    50% {
+        border-radius: 50% 60% 40% 70% / 60% 50% 70% 40%;
+    }
+}
+
+/* project.jsx */
+.projectcontainer {
+    padding: 10px;
+    margin: 0 0 20px 0;
+    background-color: #f1efe7;
+    min-height: 550px; 
+}
+
+.projectcard {
+    margin: 20px;
+    width: 300px;
+    height: 320px;
+    background-color: white;
+    border: 2px solid var(--brand-light);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.projectcard:hover {
+    border: 2px solid rgb(43, 43, 144);
+    box-shadow: 10px 5px 5px var(--brand-light);
+}
+
+.projectcard_body {
+    margin: 20px;
+}
+
+/* skills.jsx */
+.skills_maincontainer {
+    padding: 20px;
+    margin: 0px 0 20px 0;
+}
+
+.skills_leftcontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skillscard {
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid var(--brand-light);
+    border-radius: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.skillspan {
+    display: inline-block;
+    padding: .25rem .5rem;
+    color: #697477;
+    background-color: #dae2e47d;
+    border-radius: .25rem;
+    margin: 5px;
+}
+
+/* footer.jsx */
+
+.footersection {
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #373c3f;
+    color: white;
+    display: flex;
+    font-family: Montserrat, sans-serif;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.footersection a {
+    text-decoration: none;
+    color: white;
+}
+
+.footersection a:hover {
+    color: rgb(238, 190, 46);
+}
+
+/* typingtext.jsx */
+
+.maintext {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: poppins;
+    overflow: hidden;
+}
+
+.typetext {
+    color: rgb(234 208 22);
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.cursor {
+    color: white;
+    font-weight: 100;
+    font-family: cursive;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        color: transparent;
+    }
+}
+
+/* connect.jsx */
+
+.connect_container {
+    padding: 10px;
+    background-color: #f1efe7;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.connect_container form {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect_container input, textarea {
+    width: 500px;
+    padding: 10px 30px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.connect_container input:focus, textarea:focus {
+    border: 2px solid var(--brand-light);
+}
+
+.connect_container button {
+    background-color: var(--brand);
+    border: none;
+    color: white;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.connect_container button:hover {
+    background-color: var(--brand-light);
+}
+
+@media (max-width: 768px) {
+  .projectcard,
+  .skillscard {
+    /* width: 100%; */
+    margin: 10px 0;
+  }
+
+  /* .skills_leftcontainer {
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .connect_container input, .connect_container textarea {
+    width: 75%;
+  }
+}
