@@ -23,13 +23,13 @@ function Projects() {
           </div>
         </div>
 
-        <div className={styles.projectcard} >
+        <a href='https://joelmathewjob.github.io/Clouder/' target='_blank'  className={styles.projectcard} >
           <img src={images.clouder} className="card-img-top" style={{ position:'relative' ,height:'150px', width:'200px', left:'50px'}} alt="..." />
           <div className={styles.projectcard_body}>
             <h5 style={{ textAlign: 'center', fontWeight: 'bold' }}>Clouder</h5>
             <p className="card-text">The Word Cloud Generator is a dynamic tool that transforms your text into a visually appealing word cloud.</p>
           </div>
-        </div>
+        </a>
 
         <div className={styles.projectcard}>
           <img src={images.insta} className="card-img-top" style={{ height:'150px'}} alt="..." />
