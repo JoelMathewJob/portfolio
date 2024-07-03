@@ -41,6 +41,10 @@
         
     }
 
+    .headercontainer .header_rightcontainer{
+        width:450px
+    }
+
 }
 
 .headercontainer::before {
@@ -68,6 +72,7 @@
 .header_rightcontainer {
     padding: 20px;
     width: 600px;
+    margin: 5px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -78,6 +83,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .header_leftcontainer div {
