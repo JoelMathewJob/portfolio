@@ -23,7 +23,7 @@ function Projects() {
           </div>
         </div>
 
-        <a href='https://joelmathewjob.github.io/Clouder/' target='_blank'  className={styles.projectcard} >
+        <a href='https://joelmathewjob.github.io/Clouder/' target='_blank' rel='noreferrer noopener' className={styles.projectcard} >
           <img src={images.clouder} className="card-img-top" style={{ position:'relative' ,height:'150px', width:'200px', left:'50px'}} alt="..." />
           <div className={styles.projectcard_body}>
             <h5 style={{ textAlign: 'center', fontWeight: 'bold' }}>Clouder</h5>
