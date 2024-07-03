@@ -184,6 +184,13 @@
     color: rgb(238, 190, 46);
 }
 
+@media (max-width: 768px) {
+    .footersection{
+        gap:20px;
+    }
+}
+
+
 /* typingtext.jsx */
 
 .maintext {
